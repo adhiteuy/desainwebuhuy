@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
         }
 
         .sidebar {
-            width: 200px;
-            background-color: #f4f4f4;
-            padding: 3px;
-            margin: 3px;
-            border-radius: 5px;
+            width: 250px;
+            background-color: #333;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #fff;
         }
 
         .sidebar h3 {
-            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
             text-align: center;
-            margin-top: 5px;
+            margin-top: 0;
+            color: #ffd700;
         }
 
         .menu-list {
@@ -32,24 +38,30 @@
         }
 
         .menu-item {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
 
         .menu-item a {
             text-decoration: none;
-            color: #333;
-            display: block;
-            padding: 8px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 10px;
             border-radius: 5px;
-            font-family: 'Courier New', Courier, monospace;
+            transition: background-color 0.3s ease;
         }
 
         .menu-item a:hover {
-            background-color: #ddd;
+            background-color: #444;
+        }
+
+        .menu-item a .icon {
+            margin-right: 10px;
         }
 
         .submenu {
             display: none;
+            padding-left: 20px;
         }
 
         .submenu.active {
@@ -63,44 +75,122 @@
     <h3>DAFTAR ISI</h3>
     <ul class="menu-list">
         <li class="menu-item">
-            <a href="#">Tugas Pertemuan 1</a>
+            <a href="#">
+                <i class="fas fa-book icon"></i>
+                Tugas Pertemuan 1
+            </a>
             <ul class="submenu">
                 <li><a href="Pertemuan1.html" target="frame_content">Pengantar Web</a></li>
             </ul>
         </li>
         <li class="menu-item">
-            <a href="#">Tugas Pertemuan 2</a>
+            <a href="#">
+                <i class="fas fa-book icon"></i>
+                Tugas Pertemuan 2
+            </a>
             <ul class="submenu">
                 <li><a href="Pertemuan2.html" target="frame_content">Tugas Pertemuan 2</a></li>
             </ul>
         </li>
+        <!-- Tambahkan item menu yang hilang -->
         <li class="menu-item">
-            <a href="#">Tugas Pertemuan 3</a>
+            <a href="#">
+                <i class="fas fa-book icon"></i>
+                Tugas Pertemuan 3
+            </a>
             <ul class="submenu">
                 <li><a href="Pertemuan3.html" target="frame_content">Tugas Pertemuan 3</a></li>
-           
             </ul>
         </li>
         <li class="menu-item">
-            <a href="#">Tugas Pertemuan 4</a>
+            <a href="#">
+                <i class="fas fa-book icon"></i>
+                Tugas Pertemuan 4
+            </a>
             <ul class="submenu">
                 <li><a href="Penomoran.html" target="frame_content">Penomoran</a></li>
             </ul>
         </li>
         <li class="menu-item">
-            <a href="#">Tugas Pertemuan 5</a>
+            <a href="#">
+                <i class="fas fa-book icon"></i>
+                Tugas Pertemuan 5
+            </a>
             <ul class="submenu">
                 <li><a href="tabel.html" target="frame_content">Table</a></li>
             </ul>
         </li>
         <li class="menu-item">
-            <a href="#">Tugas Pertemuan 6</a>
+            <a href="#">
+                <i class="fas fa-book icon"></i>
+                Tugas Pertemuan 6
+            </a>
             <ul class="submenu">
                 <li><a href="pertemuan6.html" target="frame_content">Form</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="#">
+                <i class="fas fa-book icon"></i>
+                Tugas Pertemuan 7
+            </a>
+            <ul class="submenu">
+                <li><a href="External Style Sheet.html" target="frame_content">External Style Sheet</a></li>
+                <li><a href="Internal Style Sheet.html" target="frame_content">Internal Style Sheet</a></li>
+                <li><a href="selectorbebas.html" target="frame_content">CSS Selector Bebas</a></li>
+                <li><a href="selectorclass.html" target="frame_content">CSS Selector Class</a></li>
+                <li><a href="selectorid.html" target="frame_content">CSS Selector Id</a></li>
+            </ul>
+        </li>
+        <!-- Tambahkan item menu latihan -->
+        <li class="menu-item">
+            <a href="#">
+                <i class="fas fa-book icon"></i>
+                Latihan Membuat Form Pendaftaran
+            </a>
+            <ul class="submenu">
+                <li><a href="tugashalamancss.html" target="frame_content">Form Pendaftaran</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="#">
+                <i class="fas fa-book icon"></i>
+                Tugas Pertemuan 9
+            </a>
+            <ul class="submenu">
+                <li><a href="variabel.html" target="frame_content"> A. Variabel </a></li>
+                <li><a href="operator.html" target="frame_content"> B. Operator </a></li>
+                <li><a href="statementkontrol.html" target="frame_content"> C. Statement Kontrol </a></li>
+                <li><a href="switch.html" target="frame_content"> D. Switch </a></li>
+                <li><a href="loop.html" target="frame_content"> E. Perulangan (Looping) </a></li>
+                <li><a href="function.html" target="frame_content"> F. Function </a></li>
+                <li><a href="objek.html" target="frame_content"> G. Objek </a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="#">
+                <i class="fas fa-book icon"></i>
+                Tugas Pembuatan Program
+            </a>
+            <ul class="submenu">
+                <li><a href="programkonversinilai.html" target="frame_content"> 1. Konversi Nilai </a></li>
+                <li><a href="inputnilai.html" target="frame_content"> 2. Input Nilai </a></li>
+                <li><a href="perhitungangaji.html" target="frame_content"> 3. Perhitungan Gaji </a></li>
+                <li><a href="syaratpenerimaan.html" target="frame_content"> 4. Syarat Penerimaan Pegawai </a></li>
+                <li><a href="billingonline.html" target="frame_content"> 5. Billing Online </a></li>
+                <li><a href="zodiak.html" target="frame_content"> 6. Zodiak </a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="#">
+                <i class="fas fa-book icon"></i>
+                Tugas Pertemuan 11
+            </a>
+            <ul class="submenu">
+                <li><a href="formjavascript.html" target="frame_content"> 1. Form Javascript </a></li>
+            </ul>
         </li>
     </ul>
-    <a href="#">Tugas Pertemuan 7</a>
-
 </div>
 
 <script>
